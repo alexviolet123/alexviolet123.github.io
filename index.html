@@ -1,11 +1,83 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
+    <title>Personal Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .container {
+            display: flex;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 800px;
+            width: 100%;
+        }
+        .sidebar {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+        }
+        .sidebar img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        .sidebar h2 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .sidebar p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+            text-decoration: none;
+        }
+        .content {
+            padding: 20px;
+            width: 70%;
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .content a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Page</h1>
-    <p>This is my personal homepage.</p>
+    <div class="container">
+        <div class="sidebar">
+            <img src="profile.jpg" alt="Profile Picture">
+            <h2>Zixun Huang</h2>
+            <p>Under graduate student at Peking University</p>
+            <a href="Alexpku@stu.pku.edu.cn">Email</a>
+        </div>
+        <div class="content">
+            <h2>About me</h2>
+            <p>My name is Zixun Huang, and I am a third-year undergraduate student at the School of Mathematical Sciences, Peking University (PKU). My interests lie in machine learning and high-dimensional statistics. </a>.</p>
+        </div>
+    </div>
 </body>
 </html>
